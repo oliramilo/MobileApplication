@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppInteraction</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="call">call</string>
+    <string name="get_number">Get Number</string>
+    <string name="no_number_set">No number set</string>
+    <string name="input_latitude">Input latitude</string>
+    <string name="longitude_input">longitude input</string>
+    <string name="show_location">Show location</string>
+    <string name="get_image">Get image</string>
+    <string name="view_thumbnail">View thumbnail</string>
+    <string name="file_provider">file provider</string>
+</resources>
