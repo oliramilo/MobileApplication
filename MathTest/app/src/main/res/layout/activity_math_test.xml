@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MathTestActivity">
+
+
+    <TextView
+        android:id="@+id/questionText"
+        android:text="@string/question_question_text"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:text="@string/remaining_time"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionText" />
+
+
+    <TextView
+        android:id="@+id/totalScoreView"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="@string/score"
+        app:layout_constraintStart_toEndOf="@+id/timerText"
+        app:layout_constraintTop_toBottomOf="@+id/questionText" />
+
+    <EditText
+        android:id="@+id/customAnswerBox"
+        android:visibility="invisible"
+        android:imeOptions="actionDone"
+        android:layout_width="239dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="284dp"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/firstAnswer"
+        android:layout_width="152dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="212dp"
+        android:drawableLeft="@drawable/hollow_circle_icon"
+        android:text="@string/_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/thirdAnswer"
+        android:layout_width="152dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/hollow_circle_icon"
+        android:text="@string/_3"
+        app:layout_constraintStart_toStartOf="@+id/firstAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/firstAnswer"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/fourthAnswer"
+        android:layout_width="152dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/hollow_circle_icon"
+        android:text="@string/_4"
+        app:layout_constraintStart_toEndOf="@+id/thirdAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/secondAnswer"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/secondAnswer"
+        android:layout_width="152dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="376dp"
+        android:drawableLeft="@drawable/hollow_circle_icon"
+        android:text="@string/_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstAnswer"
+        app:layout_constraintTop_toTopOf="@+id/firstAnswer"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/moreAnswers"
+        android:layout_width="97dp"
+        android:layout_height="48dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/previousAnswers"
+
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/previousAnswers"
+        android:layout_width="97dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/prev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/moreAnswers"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/next_question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/endTestButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949" />
+
+    <Button
+        android:id="@+id/endTestButton"
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="88dp"
+        android:text="@string/end_test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

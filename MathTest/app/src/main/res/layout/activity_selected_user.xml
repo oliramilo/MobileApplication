@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.SelectedUserActivity">
+
+
+    <ImageView
+        android:id="@+id/selectedUserProfileImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/default_user_image"
+        />
+
+    <TextView
+        android:id="@+id/userInfoTextBox"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:text="@string/user_data"
+        />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="@string/edit_user" />
+
+    <Button
+        android:id="@+id/viewSelectedUserTestsButton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="@string/view_tests" />
+
+    <Button
+        android:id="@+id/deleteUser"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="@string/delete_user" />
+</LinearLayout>
